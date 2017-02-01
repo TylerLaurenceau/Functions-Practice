@@ -128,6 +128,10 @@ function translate(string){
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-
+function reverseString(string) {
+  var backwards = "";
+  for(i = string.length - 1; i >= 0; i--){
+    backwards += string[i];
+  }
+  return backwards;
 }
